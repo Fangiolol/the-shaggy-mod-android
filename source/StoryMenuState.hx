@@ -35,9 +35,9 @@ class StoryMenuState extends MusicBeatState
 	];
 
 	var weekNames:Array<String> = [
-		"Less than 0.001%",
-		"Up to 0.001%",
-		"???%"
+		"Nem tentando: < que 0.001%",
+		"To tentando um pouco: > 0.001%",
+		"F E R R O U S E %"
 	];
 
 	var txtWeekTitle:FlxText;
@@ -254,8 +254,8 @@ class StoryMenuState extends MusicBeatState
 		moNotice.text = "";
 		if (curWeek == 1)
 		{
-			moNotice.text = "First song has copyright :(\nPress P for drums cover";
-			if (Main.drums) moNotice.text += "\n(drums cover active)";
+			moNotice.text = "P para tirar copyright \n(COVER CAOTICO ATIVADO)";
+			if (Main.drums) moNotice.text += "\n(COVER CAOTICO ATIVADO)";
 
 			if (FlxG.keys.justPressed.P)
 			{
