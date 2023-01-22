@@ -1,3 +1,4 @@
-# The shaggy mod source code
+# VS Saggy é
 
-This is the repository for Friday Night Funkin' VS Shaggy mod.
+Isso é um repositório só pelo source, nenhum arquivo
+como assets do mod do saggy estão aqui, apenas source e músicas 
