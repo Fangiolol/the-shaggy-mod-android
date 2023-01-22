@@ -233,66 +233,67 @@ class PlayState extends MusicBeatState
 			case 'where-are-you':
 				//the text to appear;
 				dialogue = [
-					"Hey you guys",
-					"I'm looking for a dog that got lost\nin this mansion",
-					"His name is scooby, have you like seen him\nor anything?",
-					"beep bap boop", //na man, haven't seen any dog. Hey are u good at singing? we came here for a battle.
-					"You wanna like, sing?\nBut I haven't found scoobs yet",
-					"bop bee bap", //This house is a mess, there ain't nothing u can do but sing! I hope yo dog isn't fuckin dead tho
-					"I sure hope so too...",
-					"Alright, just a couple of songs though, I\ndon't know that many"
+					"Cara eu perdi meu cachorro",
+					"Nome é Scooby-doo meu fih...\nces viram ele?",
+					"n ã o, cante", //na man, haven't seen any dog. Hey are u good at singing? we came here for a battle.
+					"Cantar?",
+					"sim seu bosta", //This house is a mess, there ain't nothing u can do but sing! I hope yo dog isn't fuckin dead tho
+					"Tabom lek mas eu não sei cantar"
 				];
 				//the sprites to go along with text (n for no change)
 				dface = [
-						"f_sh_ser", "n", "n",
+						"f_sh_ser", "n",
 						"f_bf",
 						"f_sh_con",
 						"f_bf",
-						"f_sh_ser",
 						"f_sh_smug"
 						];
 				//the sides of the faces (1=left, -1=right and flipped)
-				dside = [1, 1, 1, -1, 1, -1, 1, 1];
+				dside = [1, 1, -1, 1, -1, 1];
 			case 'eruption':
 				dialogue = [
-					"Zoinks! I lost control for a second...",
-					"I'm sorry man, don't wanna make it\nunfair for you or anything.",
-					"beep boop", //adequate sentiment bitch. uh i mean let's keep singing bro!!
-					"Okay, like, get ready now and stuff"
+					"Z O I N K S !",
+					"Foi mal crianza",
+					"Deboa, continua gay", //adequate sentiment bitch. uh i mean let's keep singing bro!!
+					"Jae anão"
 				];
 				dface = [
-						"f_sh",
-						"f_sh",
+						"f_sh", "n",
 						"f_bf",
 						"f_sh_smug"
 						];
 				dside = [1, 1, -1, 1];
 			case 'kaio-ken':
 				dialogue = [
-					"You're like, actually good and stuff",
-					"I don't wanna like bore you, so I'll\nsing faster this time",
-					"beep boop boop bap bee", //yeah like that's gonna make it harder for me. ur too easy man! come up with something... not boring!
-					"...",
-					"Alright, alright...\nHere we go man!",
+					"Ce é pika mesmo!",
+					"Quer acelerar?",
+					"Sim porque ta muy ez", //yeah like that's gonna make it harder for me. ur too easy man! come up with something... not boring!
+					"Engole isso aqui então, gay",
+					"Mas é tu que deixa",
+					"Que que foi?",
+					"*Barulhos de microondas manso*",
+					"Acho bom...",
 				];
 				dface = [
-						"f_sh",
-						"f_sh",
+						"f_sh", "n",
+						"f_bf_burn",
+						"f_sh_smug",
 						"f_bf",
 						"f_sh_ser",
-						"f_sh_smug"
+						"f_bf_a",
+						"f_sh_ang"
 						];
-				dside = [1, 1, -1, 1, 1];
+				dside = [1, 1, -1, 1, -1, 1, -1, 1];
 			case 'whats-new':
 				dialogue = [
-					"You haven't seen scoob around?",
-					"bap boop",
-					"Oh gosh! I haven't like, found him either!\nHe must be so scared...",
-					"boop bap",
-					"Huh? sing again?", //Did I fuckin stutter? Bring it on bitch, I'm tired of your shit. I didn't even care for your dog.
-					"You know, maybe singing Scooby's\nfavorite song might call his attention\nand stuff",
-					"If he can hear us...",
-					"Alright, here we go."
+					"Fui cagar, Scooby não apareceu?",
+					"N E G A T I V O",
+					"Caraiba! Ele deve estar com o...\nRabo entre as pernas",
+					"Não importo, canta denovo",
+					"D E N O V O?", //Did I fuckin stutter? Bring it on bitch, I'm tired of your shit. I didn't even care for your dog.
+					"Então vamo cantar uma que\nmeu dog gosta",
+					"Se for boa ta valendo",
+					"Ta me tirando?"
 				];
 				dface = [
 						"f_sh_ser",
@@ -301,55 +302,62 @@ class PlayState extends MusicBeatState
 						"f_bf",
 						"f_sh_con",
 						"f_sh_ser",
-						"f_sh_con",
-						"f_sh"
+						"f_bf",
+						"f_sh_ang"
 						];
-				dside = [1, -1, 1, -1, 1, 1, 1, 1];
+				dside = [1, -1, 1, -1, 1, 1, -1, 1];
 			case 'blast':
 				dialogue = [
 					"...",
 					"...",
 					"...",
-					"Scooby's my closest friend y'know",
-					"We've been together for the last 70 years!",
-					"I stopped my aging when I was like 17.",
-					"I didn't do the same to my friends because it\nwould be selfish for me to not let them\nrest and stuff...",
-					"But zoinks! Scooby was so insistent.\nhe told me he'd never regret his decision if\nit meant to spend eternity side by side.",
-					"Now he's the only one I have left...",
-					"beep bee bap!",
-					"...",
-					"I'm uh.. gonna make some noise."
+					"O cachorro é o melhor amigo \ndo homi",
+					"Por isso a gente é imortal",
+					"Mas meros mortais precisam do\ndescanso eterno, tipo a minha\ngangue frouxa...",
+					"Mas  Z O I N K S! Scooby tambem queria.\nser imortal junto comigo...",
+					"Meu unico amigo...",
+					"Quem?",
+					"O que-",
+					"Te pergunto KKKKKKKKKKKKKKKKKK\nKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK.",
+					"O seu merdinha \nvamo fazer barulho então"
 				];
 				dface = [
 						"f_sh", "f_sh_ser",
 						"f_bf",
-						"f_sh_ser", "f_sh", "f_sh_ser", "f_sh_con", "f_sh_pens", "f_sh_sad",
+						"f_sh_ser", "f_sh", "f_sh_con", "f_sh_pens", "f_sh_sad",
 						"f_bf",
-						"f_sh_ang", "f_sh_smug"
+						"f_sh_smug",
+						"f_bf_burn",
+						"f_sh_ang"
 						];
-				dside = [1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, 1];
+				dside = [1, 1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1];
 			case 'super-saiyan':
 				dialogue = [
-					"beep boo baa", 
-					"bap bee beep boop bee", 
-					"bap bap bee pop", 
-					"That's like, really rude man...\nI really-",
-					"bee boop",
-					"...",
-					"Heh.",
-					"Prick."
+					"*barulhos de microondas pistola*", 
+					"*barulhos de metralhadora*", 
+					"*barulhos de bully de chá*", 
+					"que?",
+					"Ele ta xingando você e \nteu cachorro em beepoopês",
+					"Po mulher tu é mo sem graça",
+					"Vai ver tu que é fraco",
+					"Que?",
+					"Train go go train dreidel \nthe ghost train"
 				];
 				dface = [
-						"f_bf", "n", "n",
+						"f_bf_burn", "n", "n",
 						"f_sh_con",
+						"f_gf",
 						"f_bf",
-						"f_sh_ang", "f_sh_smug", "n"
+						"f_sh_smug", 
+						"f_bf",
+						"f_sh_smug"
 						];
-				dside = [-1, -1, -1, 1, -1, 1, 1, 1, 1];
+				dside = [-1, -1, -1, 1, -1, -1, 1, -1, 1];
 			case 'dadbattle':
 				
 			case 'garden-havoc':
 		}
+
 
 		if (SONG.song.toLowerCase() == 'spookeez' || SONG.song.toLowerCase() == 'monster' || SONG.song.toLowerCase() == 'south')
 		{
@@ -990,7 +998,7 @@ class PlayState extends MusicBeatState
 		add(healthBar);
 
 		// Add Kade Engine watermark
-		var kadeEngineWatermark = new FlxText(4,FlxG.height - 4,0,SONG.song + " " + (storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + " - KE " + MainMenuState.kadeEngineVer, 16);
+		var kadeEngineWatermark = new FlxText(4,FlxG.height - 4,0,SONG.song + " " + (storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + " - KE " + MainMenuState.kadeEngineVer + "Portado por Fang", 16);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
