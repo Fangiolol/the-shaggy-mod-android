@@ -34,7 +34,7 @@ class OptionsMenu extends MusicBeatState
 		*/
 
 		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
-		controlsStrings = CoolUtil.coolStringFile(inputStr[FlxG.save.data.dfjk] + "\n" + (FlxG.save.data.newInput ? "Virgin input easy" : "Chad input normal") + "\n" + (FlxG.save.data.downscroll ? 'Downscroll' : 'Upscroll') + "\nAccuracy " + (!FlxG.save.data.accuracyDisplay ? "off" : "on") + "\n" + (FlxG.save.data.mash_punish ? 'Anti-Mash on' : 'Anti-Mash off'));
+		controlsStrings = CoolUtil.coolStringFile(inputStr[FlxG.save.data.dfjk] + "\n" + (FlxG.save.data.newInput ? "Input de frouxo" : "Input de macho alfa") + "\n" + (FlxG.save.data.downscroll ? 'Downscroll' : 'Upscroll') + "\nAnalise " + (!FlxG.save.data.accuracyDisplay ? "nao" : "sim") + "\n" + (FlxG.save.data.mash_punish ? 'Anti-expurgar teclado sim' : 'Anti-expurgar teclado nao'));
 		
 		trace(controlsStrings);
 
@@ -103,11 +103,11 @@ class OptionsMenu extends MusicBeatState
 			switch (curSelected)
 			{
 				case 1:
-					var infoTxt:String = "No miss-press punishment";
+					var infoTxt:String = "DA PRA MACETA";
 
 					if (!FlxG.save.data.newInput)
 					{
-						infoTxt = "Not cringe B)";
+						infoTxt = "NAO DA PRA MACETA :)";
 					}
 
 					info = new FlxText(108, FlxG.height - 290, 0, infoTxt, 20);
@@ -115,7 +115,7 @@ class OptionsMenu extends MusicBeatState
 					info.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 					add(info);
 				case 4:
-					var infoTxt:String = "Only acts on Virgin Input";
+					var infoTxt:String = "So funciona se voce for frouxo";
 
 					info = new FlxText(108, FlxG.height - 290, 0, infoTxt, 20);
 					info.scrollFactor.set();
@@ -150,7 +150,7 @@ class OptionsMenu extends MusicBeatState
 						
 					case 1:
 						FlxG.save.data.newInput = !FlxG.save.data.newInput;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.newInput ? "Virgin input easy" : "Chad input normal"), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.newInput ? "Input de frouxo" : "Input de macho alfa"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 1;
 						grpControls.add(ctrl);
@@ -162,13 +162,13 @@ class OptionsMenu extends MusicBeatState
 						grpControls.add(ctrl);
 					case 3:
 						FlxG.save.data.accuracyDisplay = !FlxG.save.data.accuracyDisplay;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, "Accuracy " + (!FlxG.save.data.accuracyDisplay ? "off" : "on"), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, "Analise " + (!FlxG.save.data.accuracyDisplay ? "nao" : "sim"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 3;
 						grpControls.add(ctrl);
 					case 4:
 						FlxG.save.data.mash_punish = !FlxG.save.data.mash_punish;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.mash_punish ? "Anti-Mash on" : "Anti-Mash off"), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.mash_punish ? "Anti-expurgar teclado sim" : "Anti-expurgar teclado nao"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 4;
 						grpControls.add(ctrl);
