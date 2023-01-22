@@ -178,7 +178,7 @@ class FreeplayState extends MusicBeatState
 		if (Math.abs(lerpScore - intendedScore) <= 10)
 			lerpScore = intendedScore;
 
-		scoreText.text = "PERSONAL BEST:" + lerpScore;
+		scoreText.text = "MELHOR SCORE PESSOAL:" + lerpScore;
 
 		var upP = controls.UP_P;
 		var downP = controls.DOWN_P;
