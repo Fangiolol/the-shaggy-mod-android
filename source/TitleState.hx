@@ -394,16 +394,16 @@ class TitleState extends MusicBeatState
             case 1:
                 
             case 2:
-                createCoolText(['Mod by']);
+                createCoolText(['Shaggy But bad pelo']);
             // credTextShit.visible = true;
             case 3:
-                addMoreText('perez');
+                addMoreText('Team VHS');
             case 4:
             	deleteCoolText();
             case 5:
-                createCoolText(["Using Kade dev engine"]);
+                createCoolText(["Valeu srPerez"]);
             case 7:
-                addMoreText('Forever');
+                addMoreText('e CLF');
                 ngSpr.visible = false;
             // credTextShit.text += '\nNewgrounds';
             case 8:
@@ -414,10 +414,10 @@ class TitleState extends MusicBeatState
             // credTextShit.text = 'Shoutouts Tom Fulp';
             // credTextShit.screenCenter();
             case 9:
-                createCoolText(['go play']);
+                createCoolText(['Vsilva compilou']);
             // credTextShit.visible = true;
             case 11:
-                addMoreText('funkin fanworks');
+                addMoreText('essa sofrencia');
             // credTextShit.text += '\nlmao';
             case 12:
                 deleteCoolText();
@@ -432,7 +432,7 @@ class TitleState extends MusicBeatState
                 addMoreText('Funkin');
             // credTextShit.text += '\nNight';
             case 15:
-                addMoreText('Vs. Shaggy'); // credTextShit.text += '\nFunkin';
+                addMoreText('Vs. Shaggy Bad Android'); // credTextShit.text += '\nFunkin';
             case 16:
                 skipIntro();
         }
