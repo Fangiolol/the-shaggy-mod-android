@@ -22,6 +22,7 @@ class Main extends Sprite
 	public static var woops:Bool = false;
 	public static var skipDes:Bool = false;
 	public static var drums:Bool = false;
+        public static var memoryCounter:MemoryCounter;
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
@@ -76,6 +77,7 @@ class Main extends Sprite
 
 		#if !mobile
 		addChild(new FPS(10, 3, 0xFFFFFF));
+                addChild(new memoryCounter(10, 3, 0xFFFFFF));
 		#end
 	}
 }
