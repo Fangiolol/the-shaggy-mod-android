@@ -74,10 +74,9 @@ class Main extends Sprite
 		#end
 
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
-
+                addChild(new MemoryCounter(10, 3, 0xFFFFFF));
 		#if !mobile
 		addChild(new FPS(10, 3, 0xFFFFFF));
-                addChild(new MemoryCounter(10, 3, 0xFFFFFF));
 		#end
 	}
 }
