@@ -227,7 +227,7 @@ class StoryMenuState extends MusicBeatState
 		trace("Line 165");
 
 		#if mobileC
-		addVirtualPad(FULL, A_B);
+		addVirtualPad(FULL, A_B_C);
 		#end
 
 		super.create();
@@ -254,10 +254,10 @@ class StoryMenuState extends MusicBeatState
 		moNotice.text = "";
 		if (curWeek == 1)
 		{
-			moNotice.text = "P para tirar copyright \n(COVER CAOTICO ATIVADO)";
+			moNotice.text = "C para tirar copyright \n(COVER CAOTICO ATIVADO)";
 			if (Main.drums) moNotice.text += "\n(COVER CAOTICO ATIVADO)";
 
-			if (FlxG.keys.justPressed.P)
+			if (FlxG.keys.justPressed.P #if mobileC || _virtualpad.buttonC.justPressed #end)
 			{
 				Main.drums = !Main.drums;
 				if (Main.drums) FlxG.sound.play(Paths.sound('cancelMenu'));
